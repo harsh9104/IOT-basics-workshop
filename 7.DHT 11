@@ -1,3 +1,12 @@
+/*
+Needed Components :
+Arduino Uno
+Cable
+Bread Board
+4.7k Ohm Resistor
+M2M jumper wires(4)
+DHT11 Temperature and Humidity Sensor Module
+*/
 #include <dht11.h>
 #define DHT11PIN 4
 
