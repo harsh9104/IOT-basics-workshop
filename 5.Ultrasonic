@@ -1,7 +1,11 @@
 /*
-  Ultrasonic Sensor HC-SR04 and Arduino Tutorial
-
+Needed Components :
+Arduino Uno
+Cable
+HC-SR04 ultra sonic sensor
+M2F jumper Wires(4)
 */
+
 // defines pins numbers
 const int trigPin = 9;
 const int echoPin = 10;
