@@ -1,5 +1,9 @@
 /*
- * PIR sensor tester
+ Needed Components :
+ Arduino Uno
+Cable
+Motion Sensor : PIR 
+M2F jumper Wires(3)
  */
  
 int ledPin = 13;                // choose the pin for the LED
