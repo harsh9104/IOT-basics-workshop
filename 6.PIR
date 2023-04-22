@@ -1,10 +1,10 @@
 /*
- Needed Components :
- Arduino Uno
+Needed Components :
+Arduino Uno
 Cable
 Motion Sensor : PIR 
 M2F jumper Wires(3)
- */
+*/
  
 int ledPin = 13;                // choose the pin for the LED
 int inputPin = 2;               // choose the input pin (for PIR sensor)
