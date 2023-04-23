@@ -17,7 +17,7 @@
 ![arduino](https://user-images.githubusercontent.com/96485370/233783398-7d4be38d-e832-4a57-b6f0-0af755c79198.png)
 
 
-### Quick Guide of Aduiuno
+### Aduiuno Documentation
 
 [Arduino - Quick Guide.pdf](https://github.com/harsh9104/IOT-basics-workshop/files/11302771/Arduino.-.Quick.Guide.pdf)
 
