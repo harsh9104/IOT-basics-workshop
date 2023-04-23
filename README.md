@@ -17,6 +17,12 @@
 ![arduino](https://user-images.githubusercontent.com/96485370/233783398-7d4be38d-e832-4a57-b6f0-0af755c79198.png)
 
 
+### Quick Guide of Aduiuno
+
+[Arduino - Quick Guide.pdf](https://github.com/harsh9104/IOT-basics-workshop/files/11302771/Arduino.-.Quick.Guide.pdf)
+
+
+
 Arduino is an open-source electronics platform designed to simplify the process of creating interactive projects. It consists of a programmable microcontroller board, a development environment for writing and uploading code, and a community of users who share their ideas and projects. With Arduino, you can create a wide range of electronic devices, from simple robots and LED displays to complex home automation systems and interactive installations. It is widely used by hobbyists, students, and professionals in various fields, such as engineering, art, and design. The platform is known for its ease of use, flexibility, and affordability, making it accessible to anyone with a desire to learn and create.
 
 
@@ -105,6 +111,4 @@ The DHT11 is a temperature and humidity sensor module that uses a thermistor and
 A potentiometer is an adjustable resistor that allows you to vary the resistance along its length by turning a knob or a shaft. It is commonly used in electronic circuits to control the voltage, current, and volume levels, as well as to adjust the bias and gain of amplifiers. Potentiometers come in different types, such as linear and logarithmic, and are available in a wide range of values and power ratings.
 
 
-### Quick Guide of Aduiuno
 
-[Arduino - Quick Guide.pdf](https://github.com/harsh9104/IOT-basics-workshop/files/11302771/Arduino.-.Quick.Guide.pdf)
