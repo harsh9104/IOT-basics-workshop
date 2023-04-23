@@ -103,3 +103,8 @@ The DHT11 is a temperature and humidity sensor module that uses a thermistor and
 ![potentiometer](https://user-images.githubusercontent.com/96485370/233784592-b3aa76f3-4c77-4b6a-b033-00f9549dac35.png)
 
 A potentiometer is an adjustable resistor that allows you to vary the resistance along its length by turning a knob or a shaft. It is commonly used in electronic circuits to control the voltage, current, and volume levels, as well as to adjust the bias and gain of amplifiers. Potentiometers come in different types, such as linear and logarithmic, and are available in a wide range of values and power ratings.
+
+
+### Quick Guide of Aduiuno
+
+[Arduino - Quick Guide.pdf](https://github.com/harsh9104/IOT-basics-workshop/files/11302771/Arduino.-.Quick.Guide.pdf)
