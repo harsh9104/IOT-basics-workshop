@@ -31,3 +31,44 @@ if(value<300)
     digitalWrite(LED,LOW);//The LED turns OFF in Light.
   }
 }
+
+
+
+Alternative
+
+
+const int ledPin = 9;
+
+const int ldrPin = A0;
+
+void setup() {
+  
+
+Serial.begin(9600);          
+
+pinMode(ledPin, OUTPUT);
+
+pinMode(ldrPin, INPUT);
+
+}
+
+void loop() {
+
+int ldrStatus = analogRead(ldrPin);
+
+if (ldrStatus >=600) { 
+
+analogWrite(ledPin, 200);
+
+Serial.println("LDR is DARK, LED is ON");
+
+}
+
+else {
+
+analogWrite(ledPin, 50);
+
+Serial.println("LED OFF");
+
+}
+}
