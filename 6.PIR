@@ -1,40 +1,21 @@
-/*
-Needed Components :
-Arduino Uno
-Cable
-Motion Sensor : PIR 
-M2F jumper Wires(3)
-*/
- 
-int ledPin = 13;                // choose the pin for the LED
-int inputPin = 2;               // choose the input pin (for PIR sensor)
-int pirState = LOW;             // we start, assuming no motion detected
-int val = 0;                    // variable for reading the pin status
- 
-void setup() {
-  pinMode(ledPin, OUTPUT);      // declare LED as output
-  pinMode(inputPin, INPUT);     // declare sensor as input
- 
-  Serial.begin(9600);
+int sensorState = 0;
+
+void setup()
+{
+  pinMode(2, INPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
 }
- 
-void loop(){
-  val = digitalRead(inputPin);  // read input value
-  if (val == HIGH) {            // check if the input is HIGH
-    digitalWrite(ledPin, HIGH);  // turn LED ON
-    if (pirState == LOW) {
-      // we have just turned on
-      Serial.println("Motion detected!");
-      // We only want to print on the output change, not state
-      pirState = HIGH;
-    }
+
+void loop()
+{
+  // read the state of the sensor/digital input
+  sensorState = digitalRead(2);
+  // check if sensor pin is HIGH. if it is, set the
+  // LED on.
+  if (sensorState == HIGH) {
+    digitalWrite(LED_BUILTIN, HIGH);
   } else {
-    digitalWrite(ledPin, LOW); // turn LED OFF
-    if (pirState == HIGH){
-      // we have just turned of
-      Serial.println("Motion ended!");
-      // We only want to print on the output change, not state
-      pirState = LOW;
-    }
+    digitalWrite(LED_BUILTIN, LOW);
   }
+  delay(10); // Delay a little bit to improve simulation performance
 }
