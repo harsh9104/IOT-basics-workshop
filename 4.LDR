@@ -10,65 +10,33 @@ LED
 M2M jumper wires(6)
 */
 
-int LDRInput=A0; //Set Analog Input A0 for LDR.
-int LED=2;
+const int ledPin = 10;  
+const int ldrPin = A0;  
+
+
 void setup() {
-Serial.begin(9600);
-pinMode(LDRInput,INPUT);
-pinMode(LED,OUTPUT);
+
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);  
+  pinMode(ldrPin, INPUT);  
 }
 
 void loop() {
-int value=analogRead(LDRInput);//Reads the Value of LDR(light).
-Serial.println("LDR value is :");//Prints the value of LDR to Serial Monitor.
-Serial.println(value);
-if(value<300)
-  {
-    digitalWrite(LED,HIGH);//The LED turns ON in Dark.
-  }
-  else
-  {
-    digitalWrite(LED,LOW);//The LED turns OFF in Light.
-  }
-}
+
+  int ldrStatus = analogRead(ldrPin);   
 
 
 
-##Alternative Code
+   if (ldrStatus <=300) {
 
-
-const int ledPin = 9;
-
-const int ldrPin = A0;
-
-void setup() {
+    digitalWrite(ledPin, HIGH);               
   
+    
+   }
+  else {
 
-Serial.begin(9600);          
-
-pinMode(ledPin, OUTPUT);
-
-pinMode(ldrPin, INPUT);
-
-}
-
-void loop() {
-
-int ldrStatus = analogRead(ldrPin);
-
-if (ldrStatus >=600) { 
-
-analogWrite(ledPin, 200);
-
-Serial.println("LDR is DARK, LED is ON");
-
-}
-
-else {
-
-analogWrite(ledPin, 50);
-
-Serial.println("LED OFF");
-
-}
+    digitalWrite(ledPin, LOW);          
+    
+  }
+  
 }
